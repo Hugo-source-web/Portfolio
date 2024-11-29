@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chokokutai&family=Michroma&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>portfolio</title>
+</head>
+<body>
+    <div id="loginOverlay" class="overlay">
+        <canvas class="matrix-canvas"></canvas>
+        <div class="overlay-content" id="overlayContent">
+            <h2 id="decodeText">PLEASE LOG IN</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" class="autofill" placeholder="Your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" class="autofill" placeholder="Your password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div>
+            <nav class="navbar">
+                <ul class="nav-links left">
+                    <li><a href="javascript:void(0);" onclick="goToSlide(0)">HOME</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToSlide(1)">DESKTOP APPS</a></li>
+                </ul>
+                <div class="logo">
+                    <a href="javascript:void(0);" onclick="goToSlide(0)"">HUGO RODRIGUEZ</a>
+                </div>
+                <ul class="nav-links right">
+                    <li><a href="javascript:void(0);" onclick="goToSlide(5)">MOBILE APPS</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToSlide(6)">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="home">
+                <div class="background">
+                    <div class="lava-lamp"></div>
+                    <div class="lava-lamp"></div>
+                    <div class="lava-lamp"></div>
+                    <div class="lava-lamp"></div>
+                    <div class="lava-lamp"></div>
+                </div>
+                <h1 id="cliTypingEffect" class="text-focus-in">PROGRAMADOR FULL STACK</h1>
+                <img src="images/phone.png" alt="">
+            </div>
+            <div class="swiper-slide" id="first-project">
+                <div class="projDesc">
+                    <h1>PANTALLA DE CARGA</h1>
+                    <p>este proyecto es una pantalla de carga personalizada para un servidor de GTA Roleplay. La pantalla es interactiva y usa diferentes elementos de JS y CSS para interactuar con el usuario</p>
+                    <div class="langDiv">
+                        <img src="images/icons/css-3.png" alt="">
+                        <img src="images/icons/html-5.png" alt="">
+                        <img src="images/icons/js.png" alt="">
+                    </div>
+                </div>
+                <div class="spriteContainer">
+                    <div class="fade-layer" aria-hidden="true"></div>
+                    <img src="images/sprite.png" alt="">
+                </div>
+                <div class="gifPrev"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="projDesc">
+                    <h1>PAGINA DE ALQUILER DE COCHES</h1>
+                    <p>Este proyecto consiste en una página web de alquiler de coches de alata gama. Esta hecha completamente en HTML, CSS, y JS, y librerias para elementos dinamicos como las diapositivas</p>
+                    <div class="langDiv">
+                        <img src="images/icons/css-3.png" alt="">
+                        <img src="images/icons/html-5.png" alt="">
+                        <img src="images/icons/js.png" alt="">
+                    </div>
+                </div>
+                <div class="spriteContainer">
+                    <div class="fade-layer" aria-hidden="true"></div>
+                    <img src="images/car.png" alt="">
+                </div>
+                <div class="gifPrev2"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="projDesc">
+                    <h1>PAGINA DE INFORMACION DE FESTIVAL</h1>
+                    <p>Esta página forma parte de una colaboración para elaborar una página web para un festival de música ficticio. Utiliza los keyframes de CSS y JS, para llevar a cabo las animaciones vistas en pantalla.</p>
+                    <div class="langDiv">
+                        <img src="images/icons/css-3.png" alt="">
+                        <img src="images/icons/html-5.png" alt="">
+                        <img src="images/icons/js.png" alt="">
+                    </div>
+                </div>
+                <div class="spriteContainer">
+                    <div class="fade-layer" aria-hidden="true"></div>
+                    <img src="images/champagne.png" alt="">
+                </div>
+                <div class="gifPrev3"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="projDesc">
+                    <h1>PAGINA SIMPLE DE CURSOS</h1>
+                    <p>Esta aplicación se hizo entre varios colaboradores. Se trata de una aplicación simple de cursos online, donde se puede acceder tanto a una vista de profesor como de alumno, cada una con diferrentes opciones.</p>
+                    <div class="langDiv">
+                        <img src="images/icons/css-3.png" alt="">
+                        <img src="images/icons/html-5.png" alt="">
+                        <img src="images/icons/js.png" alt="">
+                        <img src="images/icons/laravel.png" alt="">
+                    </div>
+                </div>
+                <div class="spriteContainer">
+                    <div class="fade-layer" aria-hidden="true"></div>
+                    <img src="images/teacher.png" alt="">
+                </div>
+                <div class="gifPrev4"></div>
+            </div>
+            <div class="swiper-slide" id="coming-soon">
+                <div class="projDesc">
+                    <h1 class="shine">COMING SOON</h1>
+                    <p class="chrome">Este portfolio está bajo constante mantenimiento, pronto se publicarán mas proyectos!</p>
+                </div>
+            </div>
+            <div class="swiper-slide" id="contact">
+                <div class="projDesc">
+                    <h1 class="shine">PONTE EN CONTACTO</h1>
+                    <div class="contact-buttons">
+                        <button onclick="window.location.href='mailto:your-email@example.com'">Email Me</button>
+                        <button onclick="window.location.href='tel:+1234567890'">Call Me</button>
+                        <button onclick="window.location.href='https://www.linkedin.com/in/your-profile'">LinkedIn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
